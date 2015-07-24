@@ -9,6 +9,7 @@ var jsonServer = require('json-server');
 var apiServer = jsonServer.create();
 var router = jsonServer.router('db.json');
 var serve = require('gulp-serve');
+var sass = require('gulp-sass');
 
 
 /****************************************
@@ -52,13 +53,23 @@ gulp.task('serve:web', ['serve:api'], serve({
 
 gulp.task('serve', ['serve:api', 'serve:web']);
 
+/****************************************
+  Sass
+*****************************************/
+
+gulp.task('sass', function() {
+  return gulp.src('./*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
 
 /****************************************
   Watch
 *****************************************/
 
 gulp.task('watch', ['build'], function () {
-  return gulp.watch(['src/**/*.js', 'src/**/*.hbs'], ['build'])
+  gulp.watch(['src/**/*.js', 'src/**/*.hbs'], ['build']);
+  gulp.watch('./*.scss', ['sass'])
 })
 
 // Default

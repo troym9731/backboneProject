@@ -1,16 +1,32 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "Brad",
       "hobby": "CSS",
-      "img": "http://robohash.org/14ebc73da14.png"
+      "img": "http://robohash.org/14ebc73da14.png",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Kevin",
       "hobby": "Beard Growing",
-      "img": "http://robohash.org/14eb93afa4d.png"
+      "img": "http://robohash.org/14eb93afa4d.png",
+      "id": 2
+    },
+    {
+      "name": "Troy",
+      "hobby": "Development",
+      "img": "http://robohash.org/14ec1bb56d9.png",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "make": "Ferrari",
+      "model": "488GTB",
+      "image": "http://s1.cdn.autoevolution.com/images/news/gallery/ferrari-488-gtb-churns-out-661-hp-560-lb-ft-video-photo-gallery_1.jpg",
+      "price": 242737,
+      "horsepower": 661,
+      "id": 1
     }
   ]
 }
