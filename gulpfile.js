@@ -58,7 +58,7 @@ gulp.task('serve', ['serve:api', 'serve:web']);
 *****************************************/
 
 gulp.task('sass', function() {
-  return gulp.src('./*.scss')
+  return gulp.src('./sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
 });
@@ -69,8 +69,8 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['src/**/*.js', 'src/**/*.hbs'], ['build']);
-  gulp.watch('./*.scss', ['sass'])
+  gulp.watch('./sass/*.scss', ['sass'])
 })
 
 // Default
-gulp.task('default', ['serve', 'watch']);
+gulp.task('default', ['serve', 'watch', 'sass']);
