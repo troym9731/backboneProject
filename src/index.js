@@ -21,8 +21,11 @@ App.Router = Backbone.Router.extend({
     'user/add(/)': 'addUser',
     'user/:id/edit(/)': 'addUser',
     'user/:id/delete(/)': 'deleteUser',
-    '*actions': 'defaultRoute'
+    'car/add(/)': 'addCar',
+    'car/:id/edit(/)': 'addCar',
+    'car/:id/delete(/)': 'deleteCar',
   },
+    '*actions': 'defaultRoute'
 
   // Route handlers
 
@@ -42,6 +45,17 @@ App.Router = Backbone.Router.extend({
     });
   },
 
+  addCar: function(id) {
+    App.Views.UserForm.render(id);
+  },
+
+  deleteCar: function(id) {
+    var user = userCollection.get(id);
+
+    user.destroy().done(function (user) {
+      App.router.navigate('/', { trigger: true })
+    });
+  },
   defaultRoute: function(actions) {
     console.log('404');
   }

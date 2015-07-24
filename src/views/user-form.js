@@ -68,6 +68,7 @@ var UserFormView = Backbone.View.extend({
         App.router.navigate('/', { trigger: true });
       });
     }
+    e.preventDefault  
 
     // Prevent Default
     return false;
