@@ -6,17 +6,17 @@ var Backbone = require('backbone');
 *****************************************/
 
 var App = require('../app');
-var User = require('../models/user');
 
 /****************************************
-  Collection: User
+  Model: User
 *****************************************/
 
-var UserCollection = Backbone.Collection.extend({
-  url: App.Settings.apiRoot + '/users',
-  model: User
+App.Models.Car = Backbone.Model.extend({
+  url: function() {
+    var base = App.Settings.apiRoot + '/products';
+    if (this.isNew()) return base;
+    return base + '/' + this.id
+  }
 });
 
-App.Collections.user = new UserCollection;
-
-module.exports = App.Collections.user;
+module.exports = App.Models.Car;

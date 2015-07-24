@@ -69,7 +69,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['src/**/*.js', 'src/**/*.hbs'], ['build']);
-  gulp.watch('./*.scss', ['sass']))
+  gulp.watch('./*.scss', ['sass'])
 })
 
 // Default
