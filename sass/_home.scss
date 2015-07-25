@@ -1,4 +1,11 @@
 .hero {
   background-image: url('../src/images/bgImage.jpg');
   background-size: cover;
+  min-height: 700px;
+}
+
+.banner {
+  width: 300px;
+  margin: 0 auto;
+  color: #E91C25;
 }

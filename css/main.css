@@ -205,6 +205,7 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 button,
+a.btn,
 input,
 optgroup,
 select,
@@ -219,7 +220,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-button {
+button, a.btn {
   overflow: visible; }
 
 /**
@@ -229,6 +230,7 @@ button {
  * Correct `select` style inheritance in Firefox.
  */
 button,
+a.btn,
 select {
   text-transform: none; }
 
@@ -239,18 +241,11 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button,
-html input[type="button"], input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
-
 /**
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
+a[disabled].btn,
 html input[disabled] {
   cursor: default; }
 
@@ -258,6 +253,7 @@ html input[disabled] {
  * Remove inner padding and border in Firefox 4+.
  */
 button::-moz-focus-inner,
+a.btn::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -356,7 +352,7 @@ th {
   padding: 0; }
 
 /****************************************
-  Icons and Variables
+  Icons, Variables, Helpers
 *****************************************/
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2155,6 +2151,14 @@ th {
 .fa-medium:before {
   content: "\f23a"; }
 
+button, a.btn {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #FFF; }
+
+a.btn {
+  text-decoration: none; }
+
 /****************************************
   Layout
 *****************************************/
@@ -2170,7 +2174,9 @@ th {
   top: 50px;
   right: 110px; }
   .primary-nav a {
-    display: inline-block; }
+    display: inline-block;
+    padding: 15px;
+    margin: 0 4px; }
 
 .primary-footer {
   background-color: #7F7F7F;
@@ -2192,4 +2198,10 @@ th {
 
 .hero {
   background-image: url("../src/images/bgImage.jpg");
-  background-size: cover; }
+  background-size: cover;
+  min-height: 700px; }
+
+.banner {
+  width: 300px;
+  margin: 0 auto;
+  color: #E91C25; }
