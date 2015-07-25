@@ -1,0 +1,23 @@
+.primary-footer {
+  background-color: #7F7F7F;
+  color: #FFF;
+  position: relative;
+  min-height: 100px;
+
+  h4 {
+    position: absolute;
+    top: 20px;
+    left: 110px;
+  }
+}
+
+.social-media-nav {
+  position: absolute;
+  top: 27px;
+  right: 110px;
+
+  .fa {
+    font-size: 2em;
+    padding: 0.2em;
+  }
+}

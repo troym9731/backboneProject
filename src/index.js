@@ -25,7 +25,6 @@ App.Router = Backbone.Router.extend({
 
   // Route definitions
   routes: {
-    '': 'index',
     'user/add(/)': 'addUser',
     'user/:id/edit(/)': 'addUser',
     'user/:id/delete(/)': 'deleteUser',
@@ -37,7 +36,7 @@ App.Router = Backbone.Router.extend({
 
   // Route handlers
 
-  index: function() {
+  listUsers: function() {
     App.Views.ListUsers.render();
   },
 
