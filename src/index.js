@@ -36,6 +36,10 @@ App.Router = Backbone.Router.extend({
 
   // Route handlers
 
+  listUsers: function() {
+    App.Views.ListUsers.render();
+  },
+
   addUser: function(id) {
     App.Views.UserForm.render(id);
   },
