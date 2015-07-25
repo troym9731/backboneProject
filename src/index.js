@@ -24,8 +24,8 @@ App.Router = Backbone.Router.extend({
     'car/add(/)': 'addCar',
     'car/:id/edit(/)': 'addCar',
     'car/:id/delete(/)': 'deleteCar',
-  },
     '*actions': 'defaultRoute'
+  },
 
   // Route handlers
 

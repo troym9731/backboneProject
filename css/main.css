@@ -356,7 +356,7 @@ th {
   padding: 0; }
 
 /****************************************
-  Icons
+  Icons and Variables
 *****************************************/
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -366,8 +366,8 @@ th {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  src: url("../node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../node_modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../node_modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../node_modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../node_modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2159,21 +2159,37 @@ th {
   Layout
 *****************************************/
 .primary-header {
-  position: relative;
-  min-height: 150px; }
+  position: relative; }
 
-.logo, .primary-nav {
-  position: absolute; }
-
-.logo {
-  top: 0;
-  left: 0; }
-  .logo img {
-    width: 400px;
-    height: 120px; }
+.logo img {
+  width: 400px;
+  height: 120px; }
 
 .primary-nav {
+  position: absolute;
   top: 50px;
   right: 110px; }
   .primary-nav a {
     display: inline-block; }
+
+.primary-footer {
+  background-color: #7F7F7F;
+  color: #FFF;
+  position: relative;
+  min-height: 100px; }
+  .primary-footer h4 {
+    position: absolute;
+    top: 20px;
+    left: 110px; }
+
+.social-media-nav {
+  position: absolute;
+  top: 27px;
+  right: 110px; }
+  .social-media-nav .fa {
+    font-size: 2em;
+    padding: 0.2em; }
+
+.hero {
+  background-image: url("../src/images/bgImage.jpg");
+  background-size: cover; }

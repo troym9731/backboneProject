@@ -1,23 +1,14 @@
 .primary-header {
   position: relative;
-  min-height: 150px;
 }
 
-.logo, .primary-nav {
-  position: absolute;
-}
-
-.logo {
-  top: 0;
-  left: 0;
-
-  img {
-    width: 400px;
-    height: 120px;
-  }
+.logo img {
+  width: 400px;
+  height: 120px;
 }
 
 .primary-nav {
+  position: absolute;
   top: 50px;
   right: 110px;
 
