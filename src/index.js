@@ -12,6 +12,14 @@ App.Views.UserForm = new UserFormView;
 var ListUsersView = require('./views/list-users');
 App.Views.ListUsers  = new ListUsersView;
 
+// View: Car Form
+var CarFormView = require('./views/car-form');
+App.Views.CarForm = new CarFormView;
+
+// View: List Car
+var ListCarsView = require('./views/list-cars');
+App.Views.ListCars  = new ListCarsView;
+
 // App Router
 App.Router = Backbone.Router.extend({
 
@@ -46,16 +54,17 @@ App.Router = Backbone.Router.extend({
   },
 
   addCar: function(id) {
-    App.Views.UserForm.render(id);
+    App.Views.CarForm.render(id);
   },
 
   deleteCar: function(id) {
-    var user = userCollection.get(id);
+    var car = carCollection.get(id);
 
-    user.destroy().done(function (user) {
+    user.destroy().done(function (car) {
       App.router.navigate('/', { trigger: true })
     });
   },
+
   defaultRoute: function(actions) {
     console.log('404');
   }
