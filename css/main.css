@@ -2205,3 +2205,30 @@ a.btn {
   width: 300px;
   margin: 0 auto;
   color: #E91C25; }
+
+form {
+  background-color: #7f7f7f;
+  margin: auto;
+  width: 33%;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  color: #fff; }
+  form button, form a.btn {
+    float: right; }
+
+.formRow {
+  margin: 20px; }
+
+.label {
+  display: block;
+  float: left;
+  text-align: right;
+  width: 150px;
+  line-height: 25px; }
+
+.input {
+  margin-left: 160px; }
+
+input {
+  display: block; }
