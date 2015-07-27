@@ -42,7 +42,8 @@ var UserFormView = Backbone.View.extend({
     "submit form.user": "submitForm"
   },
 
-  submitForm: function () {
+  submitForm: function (e) {
+    e.preventDefault();
     // Collect Form Data
     var formData = {
       name: $('form.user input[name="name"]').val(),
@@ -57,7 +58,7 @@ var UserFormView = Backbone.View.extend({
 
       App.Collections.user.create(formData, {
         success: function () {
-          App.router.navigate('/', { trigger: true });
+          App.router.navigate('view/users', { trigger: true });
         }
       });
 
@@ -65,13 +66,9 @@ var UserFormView = Backbone.View.extend({
     } else {
       this.user.set(formData);
       this.user.save().done(function () {
-        App.router.navigate('/', { trigger: true });
+        App.router.navigate('view/users', { trigger: true });
       });
-    }
-    e.preventDefault  
-
-    // Prevent Default
-    return false;
+    } 
   }
 });
 

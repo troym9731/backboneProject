@@ -42,7 +42,8 @@ var CarFormView = Backbone.View.extend({
     "submit form.car": "submitForm"
   },
 
-  submitForm: function () {
+  submitForm: function (e) {
+    e.preventDefault();
     // Collect Form Data
     var formData = {
       make: $('form.car input[name="make"]').val(),
@@ -60,7 +61,7 @@ var CarFormView = Backbone.View.extend({
 
       App.Collections.car.create(formData, {
         success: function () {
-          App.router.navigate('/', { trigger: true });
+          App.router.navigate('view/products', { trigger: true });
         }
       });
 
@@ -68,13 +69,9 @@ var CarFormView = Backbone.View.extend({
     } else {
       this.car.set(formData);
       this.car.save().done(function () {
-        App.router.navigate('/', { trigger: true });
+        App.router.navigate('view/products', { trigger: true });
       });
     }
-    e.preventDefault  
-
-    // Prevent Default
-    return false;
   }
 });
 
