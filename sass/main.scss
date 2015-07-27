@@ -5,11 +5,12 @@
 @import 'normalize';
 
 /****************************************
-  Icons and Variables
+  Icons, Variables, Helpers
 *****************************************/
 
 @import 'font-awesome';
 @import 'variables';
+@import 'helpers';
 
 /****************************************
   Layout
@@ -17,4 +18,4 @@
 
 @import 'header';
 @import 'footer';
-@import 'hero';
+@import 'home';
