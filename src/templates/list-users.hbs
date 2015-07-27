@@ -1,10 +1,12 @@
 {{#each this}}
-<figure data-id="{{id}}">
-  <div><img src="{{img}}"></div>
+<figure data-id="{{id}}" class="user">
+  <div>
+  	<img src="{{img}}">
+  </div>
   <figcaption>
     <h3>Driver: {{name}}</h3>
     <h3>Hobby: {{hobby}}</h3>
-    <div>
+    <div class="links">
       <a href="/#/user/{{id}}/edit">Edit</a> |
       <a href="/#/user/{{id}}/delete">Delete</a>
     </div>
