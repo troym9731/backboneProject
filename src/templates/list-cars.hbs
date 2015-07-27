@@ -1,9 +1,9 @@
 {{#each this}}
-<figure data-id="{{id}}">
+<figure data-id="{{id}}" class="car">
   <div><img src="{{img}}"></div>
   <figcaption>
     <h1>Make: {{make}}</h1>
-    <h2>${{price}}</h2>
+    <h2>{{price}}</h2>
     <h3>Model: {{model}}</h3>
     <h3>HP: {{horsepower}}</h3>
     <div>
@@ -13,4 +13,4 @@
   </figcaption>
 </figure>
 {{/each}}
-<a class="btn" href="/#/car/add">Add New Car</a>
+<a class="btn new-car" href="/#/car/add">Add New Car</a>

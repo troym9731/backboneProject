@@ -20,11 +20,7 @@ main {
   min-height: 500px;
 }
 
-.panel div {
+.panel > div {
 	width: 75%;
 	margin: auto;
-}
-
-figure {
-	margin: 20px;
 }
