@@ -42,8 +42,7 @@ var CarFormView = Backbone.View.extend({
     "submit form.car": "submitForm"
   },
 
-  submitForm: function (e) {
-    e.preventDefault();
+  submitForm: function () {
     // Collect Form Data
     var formData = {
       make: $('form.car input[name="make"]').val(),
@@ -72,6 +71,10 @@ var CarFormView = Backbone.View.extend({
         App.router.navigate('view/products', { trigger: true });
       });
     }
+
+    // Prevent Default
+    return false;
+
   }
 });
 
