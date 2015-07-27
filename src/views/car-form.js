@@ -51,7 +51,9 @@ var CarFormView = Backbone.View.extend({
       price: $('form.car input[name="price"]').val(),
       horsepower: $('form.car input[name="horsepower"]').val()
     };
-
+    
+    console.log("I clicked the button")
+     
     // Add Mode (Create User)
     if (!this.editMode) {
 
@@ -71,7 +73,6 @@ var CarFormView = Backbone.View.extend({
         App.router.navigate('/', { trigger: true });
       });
     }
-    e.preventDefault  
 
     // Prevent Default
     return false;
