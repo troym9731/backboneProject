@@ -27,6 +27,14 @@
       "price": "$242,737",
       "horsepower": 661,
       "id": 1
+    },
+    {
+      "make": "Lamborghini",
+      "model": "Aventador LP-750",
+      "img": "http://o.aolcdn.com/dims-shared/dims3/GLOB/legacy_thumbnail/750x422/quality/95/http://www.blogcdn.com/slideshows/images/slides/339/154/5/S3391545/slug/l/lamborghini-aventador-750-4-sv-02-1.jpg",
+      "price": "$493,095",
+      "horsepower": 740,
+      "id": 2
     }
   ]
 }
