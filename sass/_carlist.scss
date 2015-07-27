@@ -1,11 +1,24 @@
 figure.car {
   margin: 0;
+  padding: 5px;
+  overflow: hidden;
 
   img {
-    width: 150px;
-    height: 125px;
+    border: 3px solid #fff;
+    width: 330px;
+    height: 212px;
+    float: left;
+  }
+
+  figcaption {
+    padding: 15px;
+    margin-left: 345px;
+    background-color: #212121;
+    border: 2px solid #ccc;
   }
 }
-main > * + * {
-  margin: 15px 0 0 0;
+
+.new-car {
+  float: right;
+  padding: 10px;
 }

@@ -62,9 +62,7 @@ var CarFormView = Backbone.View.extend({
 
       App.Collections.car.create(formData, {
         success: function () {
-
           App.router.navigate('view/products', { trigger: true });
-
         }
       });
 
@@ -72,9 +70,7 @@ var CarFormView = Backbone.View.extend({
     } else {
       this.car.set(formData);
       this.car.save().done(function () {
-
         App.router.navigate('view/products', { trigger: true });
-
       });
     }
 

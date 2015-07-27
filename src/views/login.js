@@ -33,17 +33,11 @@ var LogInView = Backbone.View.extend({
     }
 
     App.Collections.user.fetch().done(function(users) {
-      console.log(users);
       users.forEach(function(user) {
         
         if (user.name === formData.name) {
-          console.log(user.name);
-          console.log(formData.name);
           App.router.navigate('/user/' + user.id + '/edit', { trigger: true });
-          return false;
         }
-
-        _this.$el.find('h1').html('User Does Not Exist');
 
       });
     });
