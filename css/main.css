@@ -2259,11 +2259,11 @@ form {
   display: block;
   float: left;
   text-align: right;
-  width: 150px;
+  width: 100px;
   line-height: 25px; }
 
 .input {
-  margin-left: 160px; }
+  margin-left: 110px; }
 
 input {
   display: block; }
