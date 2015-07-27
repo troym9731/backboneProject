@@ -23,7 +23,7 @@
     {
       "make": "Ferrari",
       "model": "488GTB",
-      "image": "http://s1.cdn.autoevolution.com/images/news/gallery/ferrari-488-gtb-churns-out-661-hp-560-lb-ft-video-photo-gallery_1.jpg",
+      "img": "http://s1.cdn.autoevolution.com/images/news/gallery/ferrari-488-gtb-churns-out-661-hp-560-lb-ft-video-photo-gallery_1.jpg",
       "price": "$242,737",
       "horsepower": 661,
       "id": 1

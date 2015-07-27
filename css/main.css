@@ -360,7 +360,8 @@ th {
 *****************************************/
 html {
   box-sizing: border-box;
-  font: 12pt Roboto, 'Open Sans', Arial; }
+  font: 12pt Roboto, 'Open Sans', Arial;
+  color: white; }
 
 *, *::before, *::after {
   box-sizing: inherit;
@@ -2248,7 +2249,7 @@ form {
   padding: 20px;
   overflow: hidden;
   color: #fff; }
-  form button, form a.btn {
+  form a.btn {
     float: right; }
 
 .formRow {
@@ -2266,3 +2267,18 @@ form {
 
 input {
   display: block; }
+
+figure {
+  margin: 0; }
+  figure img {
+    width: 150px;
+    height: 125px; }
+
+main > * + * {
+  margin: 15px 0 0 0; }
+
+figure {
+  margin: 0; }
+
+main > * + * {
+  margin: 15px 0 0 0; }
