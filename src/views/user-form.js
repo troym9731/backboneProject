@@ -15,7 +15,7 @@ var User = require('../models/user');
 *****************************************/
 
 var UserFormView = Backbone.View.extend({
-  el: $("main"),
+  el: $(".panel > div"),
   editMode: false,
 
   render: function (userId) {

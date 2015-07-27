@@ -1,8 +1,5 @@
 figure.user {
-	// background-color: #aaa;
- //  border: 3px solid pink;
   float:left;
-
 
 	img {
 		// margin-left: -20px;
@@ -11,7 +8,6 @@ figure.user {
 		width: 100%;
 		background-image: url('../src/images/driverBackground.png');
 		background-size: cover;
-
 	}
 
 	figcaption {
@@ -28,6 +24,7 @@ figure.user {
 			border-bottom: 1px solid #fff;
 		}
 	}
+	
 	.links {
 		text-align: right;
 		float: right;

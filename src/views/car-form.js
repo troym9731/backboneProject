@@ -15,7 +15,7 @@ var Car = require('../models/car.js');
 *****************************************/
 
 var CarFormView = Backbone.View.extend({
-  el: $("main"),
+  el: $(".panel > div"),
   editMode: false,
 
   render: function (carId) {
