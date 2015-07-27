@@ -3,6 +3,7 @@ var Backbone = require('backbone');
 // App
 var App = require('./app');
 var userCollection = require('./collections/user');
+var carCollection = require('./collections/car');
 
 // View: User Form
 var UserFormView = require('./views/user-form');
@@ -20,11 +21,15 @@ App.Views.CarForm = new CarFormView;
 var ListCarsView = require('./views/list-cars');
 App.Views.ListCars  = new ListCarsView;
 
+console.log(App.Collections.car);
+
 // App Router
 App.Router = Backbone.Router.extend({
 
   // Route definitions
   routes: {
+    'view/users(/)': 'listUsers',
+    'view/products(/)': 'listProducts',
     'user/add(/)': 'addUser',
     'user/:id/edit(/)': 'addUser',
     'user/:id/delete(/)': 'deleteUser',
@@ -38,6 +43,11 @@ App.Router = Backbone.Router.extend({
 
   listUsers: function() {
     App.Views.ListUsers.render();
+  },
+
+  listProducts: function() {
+    console.log('products');
+    App.Views.ListCars.render();
   },
 
   addUser: function(id) {
