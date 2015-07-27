@@ -15,7 +15,7 @@ var App = require('../app');
 *****************************************/
 
 var LogInView = Backbone.View.extend({
-  el: $('main'),
+  el: $('.panel > div'),
 
   render: function() {
     var output = formTemplate();
@@ -39,8 +39,8 @@ var LogInView = Backbone.View.extend({
           App.router.navigate('/user/' + user.id + '/edit', { trigger: true });
         }
 
-      });
-    });
+      })
+    })
 
     return false;
 

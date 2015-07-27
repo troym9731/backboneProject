@@ -79,10 +79,6 @@ App.Router = Backbone.Router.extend({
 
   logIn: function() {
     App.Views.LogIn.render();
-  },
-
-  defaultRoute: function(actions) {
-    console.log('404');
   }
 });
 
