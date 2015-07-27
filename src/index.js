@@ -21,8 +21,6 @@ App.Views.CarForm = new CarFormView;
 var ListCarsView = require('./views/list-cars');
 App.Views.ListCars  = new ListCarsView;
 
-console.log(App.Collections.car);
-
 // App Router
 App.Router = Backbone.Router.extend({
 
