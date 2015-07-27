@@ -61,7 +61,7 @@ App.Router = Backbone.Router.extend({
     var user = userCollection.get(id);
 
     user.destroy().done(function (user) {
-      App.router.navigate('/', { trigger: true })
+      App.router.navigate('view/users', { trigger: true })
     });
   },
 
@@ -71,9 +71,10 @@ App.Router = Backbone.Router.extend({
 
   deleteCar: function(id) {
     var car = carCollection.get(id);
+    console.log(car);
 
-    user.destroy().done(function (car) {
-      App.router.navigate('/', { trigger: true })
+    car.destroy().done(function (car) {
+      App.router.navigate('view/products', { trigger: true })
     });
   },
 
