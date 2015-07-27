@@ -1,18 +1,50 @@
 <form action="#" class="car">
-  <div>
-    Make: <input type="text" name="make" value="{{make}}">
+  <h1>cars</h1>
+  <div class="formRow">
+    <div class="label">
+      <label for="make">Make: </label>
+    </div>
+    <div class="input">
+      <input type="text" name="make" id="make" value="{{make}}">
+    </div>
   </div>
-  <div>
-    Model: <input type="text" name="model" value="{{model}}">
+
+  <div class="formRow">
+    <div class="label">
+      <label for="model"> Model: </label>
+    </div>
+    <div class="input">
+      <input type="text" name="model" id="model" value="{{model}}">
+    </div>
   </div>
-  <div>
-    Image: <input type="text" name="image" value="{{img}}">
+ 
+  <div class="formRow">
+    <div class="label">
+      <label for="image">Image:  </label>
+    </div>
+    <div class="input">
+      <input type="text" name="image" id="input" value="{{img}}">
+    </div>
   </div>
-  <div>
-    Price: <input type="text" name="price" value="{{price}}">
+
+  <div class="formRow">
+    <div class="label">
+      <label for="price"> Price: </label>
+    </div>
+    <div class="input">
+      <input type="text" name="price" id="price" value="{{price}}">
+    </div>
   </div>
-  <div>
-    Horsepower: <input type="text" name="horsepower" value="{{horsepower}}">
+
+  <div class="formRow">
+    <div class="label">
+      <label for="horsepower"> Horsepower: </label>
+    </div>
+    <div class="input">
+      <input type="text" name="horsepower" id="horsepower" value="{{horsepower}}">
+    </div>
   </div>
+
   <button>Submit</button>
+
 </form>

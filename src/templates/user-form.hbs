@@ -1,9 +1,21 @@
 <form action="#" class="user">
-  <div>
-    Driver: <input type="text" name="name" value="{{name}}">
-  </div>
-  <div>
-    Hobby: <input type="text" name="hobby" value="{{hobby}}">
+	<h1>USERS</h1>
+	<div class="formRow">
+		<div class="label">
+	    <label for="name">Driver:</label>
+		</div>
+		<div class="input">
+	    <input type="text" name="name" id="id" value="{{name}}">
+		</div>
+	</div>
+
+  <div class="formRow">
+  	<div class="label">
+    	<label for="hobby">Hobby:</label> 
+  	</div>
+  	<div class="input">
+    	<input type="text" name="hobby" id="hobby" value="{{hobby}}">
+  	</div>
   </div>
   <button>Submit</button>
 </form>
