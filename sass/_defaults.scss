@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+  font: 12pt Roboto, 'Open Sans', Arial;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit;
+}
+
+h1 {
+  margin: 0;
+}
+

@@ -4,8 +4,28 @@
   min-height: 700px;
 }
 
+main {
+  position: relative;
+  min-height: 500px;
+}
+
 .banner {
-  width: 300px;
-  margin: 0 auto;
-  color: #E91C25;
+  position: absolute;
+  min-height: 500px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 150px;
+
+  > h1 {
+    color: #E91C25;
+    font: 5em 'Fjalla One';
+    margin-bottom: 30px;
+  }
+
+  a.btn {
+    background-color: rgba(180, 180, 180, 0.5);
+    padding: 10px;
+    margin: 0 20px;
+  }
 }

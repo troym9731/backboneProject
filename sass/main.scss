@@ -5,12 +5,24 @@
 @import 'normalize';
 
 /****************************************
-  Icons, Variables, Helpers
+  Fonts
+*****************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto|Fjalla+One);
+
+/****************************************
+  Defaults
+*****************************************/
+
+@import 'defaults';
+
+/****************************************
+  Icons, Variables, Components
 *****************************************/
 
 @import 'font-awesome';
 @import 'variables';
-@import 'helpers';
+@import 'components';
 
 /****************************************
   Layout

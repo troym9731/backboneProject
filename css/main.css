@@ -7,6 +7,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto|Fjalla+One);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -352,7 +353,25 @@ th {
   padding: 0; }
 
 /****************************************
-  Icons, Variables, Helpers
+  Fonts
+*****************************************/
+/****************************************
+  Defaults
+*****************************************/
+html {
+  box-sizing: border-box;
+  font: 12pt Roboto, 'Open Sans', Arial; }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit; }
+
+h1 {
+  margin: 0; }
+
+/****************************************
+  Icons, Variables, Components
 *****************************************/
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2201,7 +2220,22 @@ a.btn {
   background-size: cover;
   min-height: 700px; }
 
+main {
+  position: relative;
+  min-height: 500px; }
+
 .banner {
-  width: 300px;
-  margin: 0 auto;
-  color: #E91C25; }
+  position: absolute;
+  min-height: 500px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 150px; }
+  .banner > h1 {
+    color: #E91C25;
+    font: 5em 'Fjalla One';
+    margin-bottom: 30px; }
+  .banner a.btn {
+    background-color: rgba(180, 180, 180, 0.5);
+    padding: 10px;
+    margin: 0 20px; }
