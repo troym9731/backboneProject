@@ -21,6 +21,10 @@ App.Views.CarForm = new CarFormView;
 var ListCarsView = require('./views/list-cars');
 App.Views.ListCars  = new ListCarsView;
 
+// View: Log In
+var LogInView = require('./views/login');
+App.Views.LogIn = new LogInView;
+
 // App Router
 App.Router = Backbone.Router.extend({
 
@@ -34,6 +38,7 @@ App.Router = Backbone.Router.extend({
     'car/add(/)': 'addCar',
     'car/:id/edit(/)': 'addCar',
     'car/:id/delete(/)': 'deleteCar',
+    'view/login(/)': 'logIn',
     '*actions': 'defaultRoute'
   },
 
@@ -70,6 +75,10 @@ App.Router = Backbone.Router.extend({
     user.destroy().done(function (car) {
       App.router.navigate('/', { trigger: true })
     });
+  },
+
+  logIn: function() {
+    App.Views.LogIn.render();
   },
 
   defaultRoute: function(actions) {
