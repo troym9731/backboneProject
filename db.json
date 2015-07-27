@@ -17,12 +17,6 @@
       "hobby": "Development",
       "img": "http://robohash.org/14ec1bb56d9.png",
       "id": 3
-    },
-    {
-      "name": "wef",
-      "hobby": "wef",
-      "img": "http://robohash.org/14ed0b92a09.png",
-      "id": 4
     }
   ],
   "products": [
