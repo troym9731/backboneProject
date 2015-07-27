@@ -1,6 +1,7 @@
 figure.user {
-  float:left;
-
+  float: left;
+	width: 30%;
+	margin-top: 50px;
 	img {
 		// margin-left: -20px;
 		display: block;
@@ -13,10 +14,8 @@ figure.user {
 	figcaption {
 		background-color: #212121;
 		color: #fff;
-		margin: -3px;
 		padding: 10px 20px;
 		overflow: hidden;
-		margin: 0 38px;
 		border: 2px solid #ccc;
 
 		h3:nth-child(1) {

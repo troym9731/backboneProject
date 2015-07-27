@@ -20,11 +20,13 @@ main {
   min-height: 500px;
 }
 
-.panel div {
+.panel > div {
 	width: 75%;
 	margin: auto;
+  overflow: hidden;
 }
 
 figure {
-	margin: 20px;
+  width: 30%;
+	margin: 10px;
 }
